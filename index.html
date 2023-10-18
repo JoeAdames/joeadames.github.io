@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
     <title>Software Engineer - Front End</title>
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="sidebar">
+        <ul class="buttons">
+            <li><a href="">Home</a></li>
+            <li><a href="">Main Stats</a></li>
+            <li><a href="">Previous XP</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
         <section class="intro">
             <h1 class="name">
                 Joseph Adames
@@ -189,184 +197,7 @@
     </div>
 </body>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-    }
-    body {
-        width: 100%;
-    }
-    body ul {
-        list-style: none;
-    }
-
-    body li {}
-
-    .main-container {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
-        gap: 2em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-
-    /* INTRO */
-    .intro {
-        display: grid;
-        grid-template-areas:
-            ". name ."
-            "statement statement statement"
-            "links links links"
-        ;
-        justify-items: center;
-        align-items: center;
-        width: 80%;
-
-        padding: 20px;
-        box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-        border: 0;
-        list-style: none;
-    }
-
-    .intro .name {
-        grid-area: name;
-    }
-
-    .intro .statement {
-        grid-area: statement;
-    }
-
-    .intro .links {
-        grid-area: links;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-    }
-
-    /* SKILLS */
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        justify-items: center;
-        gap: 1em;
-        width: 80%;
-
-        padding: 20px;
-        box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-        border: 0;
-        list-style: none;
-    }
-
-    .skill {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        justify-items: center;
-        gap: 1em;
-    }
-
-    .skill ul {
-        display: grid;
-        grid-template-rows: auto;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .skill li {
-        text-align: left;
-    }
-
-    /* CERTS */
-    .certifications {
-        display: grid;
-        grid-template-rows: repeat(2, auto);
-        align-items: center;
-        width: 80%;
-        text-align: center;
-        gap: 1em;
-
-        padding: 20px;
-        box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-        border: 0;
-        list-style: none;
-    }
-
-    .certs {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        align-items: center;
-        gap: 1em;
-    }
-
-    .cert {
-        display: grid;
-        grid-template-rows: repeat(3, auto);
-        justify-items: center;
-        align-items: center;
-        gap: 1em;
-    }
-
-    /* EXPERIENCE */
-    .experience {
-        display: grid;
-        width: 80%;
-        justify-items: center;
-        gap: 2em;
-
-        padding: 20px;
-        box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-        border: 0;
-        list-style: none;
-    }
-    .credentials {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
-        width: 100%;
-        align-items: center;
-        justify-items: center;
-    }
-    .credentials .company {
-        font-weight: 700;
-        font-size: 36px;
-    }
-
-    .credentials .role {
-        font-weight: 700;
-        font-size: 24px;
-    }
-    .credentials .when {
-        font-weight: 700;
-        font-size: 18px;
-    }
-
-    .jobs {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        gap: 2em;
-    }
-    .job{
-        display: grid;
-        gap: 1em;
-        justify-items: center;
-        align-items: center;
-    }
-    .job ul {
-        display: grid;
-        gap: 1em;
-        width: 80%;
-    }
-    .experience ul li {
-        width: 95%;
-    }
+  
 </style>
-
+<script src="app.js"></script>
 </html>
