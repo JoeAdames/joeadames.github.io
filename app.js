@@ -1,76 +1,42 @@
-// let contentContainer = document.querySelector('.content-creator');
+const ui = new UI();
+const data = new Data();
 
-// let customElements = (properties) => {
-//     const elem = document.createElement(`${properties.element}`);
-
-//     for(let i in properties){
-//         elem[i] = properties[i];
-//     }
-//     return elem;
-// }
-
-// let buildHome = () => {
-
-// }
-
-// let buildMainStats = () => {
-//     const skillsArr = ["Programming", "Frameworks", "Databases", "Tools", "Soft"]
-//     let skills = customElements({
-//         element: "section",
-//         className: "skills"
-//     })
-//     skillsArr.forEach(item => {
-//         console.log(item)
-//         let skill = customElements({
-//             element: "li",
-//             className: "skill"
-//         })
-//         let name = customElements({
-//             element: "h1",
-//             textContent: `${item}`
-//         })
-//     })
-
-// }
-
-// let clearContent = () => {
-//     contentContainer.innerHTML = "";
-// }
+document.addEventListener('DOMContentLoaded', data.fetchRes)
 
 // buildMainStats()
-let home = document.querySelector('.home');
-let mainStats = document.querySelector('.main');
-let xp = document.querySelector('.xp');
+// let home = document.querySelector('.home');
+// let mainStats = document.querySelector('.main');
+// let xp = document.querySelector('.xp');
 
-let intro = document.querySelector('.intro')
-let skills = document.querySelector('.skills');
-let certifications = document.querySelector('.certifications');
-let experience = document.querySelector('.experience');
+// let intro = document.querySelector('.intro')
+// let skills = document.querySelector('.skills');
+// let certifications = document.querySelector('.certifications');
+// let experience = document.querySelector('.experience');
 
-home.addEventListener('click', () => {
-    intro.classList.remove('hide')
-    skills.classList.add('hide')
-    certifications.classList.add('hide')
-    experience.classList.add('hide')
-})
-mainStats.addEventListener('click', () => {
-    intro.classList.add('hide')
-    skills.classList.remove('hide')
-    certifications.classList.remove('hide')
-    experience.classList.add('hide')
-})
-xp.addEventListener('click', () => {
-    intro.classList.add('hide')
-    skills.classList.add('hide')
-    certifications.classList.add('hide')
-    experience.classList.remove('hide')
-})
-let buildHome = () => {
-    intro.classList.remove('hide')
-    skills.classList.add('hide')
-    certifications.classList.add('hide')
-    experience.classList.add('hide')
-}
+// home.addEventListener('click', () => {
+//     intro.classList.remove('hide')
+//     skills.classList.add('hide')
+//     certifications.classList.add('hide')
+//     experience.classList.add('hide')
+// })
+// mainStats.addEventListener('click', () => {
+//     intro.classList.add('hide')
+//     skills.classList.remove('hide')
+//     certifications.classList.remove('hide')
+//     experience.classList.add('hide')
+// })
+// xp.addEventListener('click', () => {
+//     intro.classList.add('hide')
+//     skills.classList.add('hide')
+//     certifications.classList.add('hide')
+//     experience.classList.remove('hide')
+// })
+// let buildHome = () => {
+//     intro.classList.remove('hide')
+//     skills.classList.add('hide')
+//     certifications.classList.add('hide')
+//     experience.classList.add('hide')
+// }
 
 
-document.addEventListener('load', buildHome() )
+// document.addEventListener('load', buildHome() )

@@ -1,0 +1,61 @@
+{
+    "selectors":["Home", "Skills", "Certs", "Xp"],
+    "skills": {
+        "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
+        "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
+        "Databases": ["MongoDb", "SSMS"],
+        "Tools": ["Azure DevOps", "Git", "Jira/Bitbucket"],
+        "Soft": ["Team builder", "Communications", "Client Relations", "Project Management"]
+    },
+    "Certifications": {
+        "Full Stack Web Development": {
+            "From": "Rutgers University",
+            "Date": "2017",
+            "link": "https://bootcamp.rutgers.edu/coding/"
+        },
+        "Modern Javascript From The Beginning": {
+            "From": "Udemy",
+            "Date": "2020",
+            "link": "https://www.udemy.com/course/modern-javascript-from-the-beginning/"
+        },
+        "React Front to Back": {
+            "From": "Udemy",
+            "Date": "2021",
+            "link": "https://www.udemy.com/course/modern-react-front-to-back/"
+        }
+    },
+    "Experience": {
+        "Storis Inc.": {
+            "Title": "Front End Developer",
+            "Start": "August 2021",
+            "summary": "Quickly adapting to new roles and responsibilities, I have successfully led projects, refactored code, integrated third-party tools, developed new client portals and themes, refreshed demo websites, handled support cases, and trained colleagues, demonstrating my ability to deliver high-quality results, work independently and collaboratively, learn new technologies, and solve problems effectively.",
+            "Links" :{
+                "Logo":"",
+                "website": "https://www.storis.com/"
+            }
+        },
+        "WeatherWorks Inc.": {
+            "Title": "Jr. Software Engineer",
+            "Start": "March 2020 - March 2021",
+            "summary": "As an experienced software developer proficient in VueJS, JavaScript, jQuery, and Laravel, I have a proven track record of building and maintaining scalable web applications while adhering to rigorous testing and code review practices. My strong problem-solving and analytical skills, coupled with excellent communication and interpersonal abilities, have enabled me to develop impactful internal tools that optimize data flow for meteorologists, leading to improved efficiency and accuracy in weather forecasting. My dedication to excellence and active participation in daily code reviews further ensure the quality and consistency of the codebase.",
+            "Links" :{
+                "Logo":"",
+                "website": "https://weatherworksinc.com/"
+            }
+        },
+        "Selective Insurance": {
+            "Title": "Advanced Algorithms & Applications Co-op",
+            "Start": "December 2017 - February 2019",
+            "summary": "Utilizing my expertise in SQL and programming, I develop and implement various technical solutions, effectively managing databases and software applications. My strong communication, teamwork, and problem-solving skills enable me to collaborate effectively and tackle technical challenges with innovative approaches.",
+            "Links" :{
+                "Logo":"",
+                "website": "https://www.selective.com/"
+            }
+        }
+    },
+    "socials": {
+        "twitter": null,
+        "LinkedIn": "https://www.linkedin.com/in/josephadames/",
+        "Github": "https://github.com/JoeAdames"
+    }
+}
