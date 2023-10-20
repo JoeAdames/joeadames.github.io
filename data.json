@@ -54,8 +54,14 @@
         }
     },
     "socials": {
-        "twitter": null,
-        "LinkedIn": "https://www.linkedin.com/in/josephadames/",
-        "Github": "https://github.com/JoeAdames"
+        "twitter": {
+            "website": "twitter.com"
+        },
+        "LinkedIn": {
+            "website": "https://www.linkedin.com/in/josephadames/"
+        },
+        "Github": {
+            "website": "https://github.com/JoeAdames"
+        }
     }
 }

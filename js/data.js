@@ -1,13 +1,30 @@
-class Data {
-	async fetchRes() {
-		try {
-			const info = await fetch('./data.json');
-			const results = await info.json();
-			console.log(results);
-			const ui = new UI(results);
-			ui.build();
-		} catch (error) {
-			console.error(error);
-		}
+class DataHandler {
+    constructor() {
+        this.data = {};
+    }
+    
+    loadData(data) {
+        this.data = data;
+		console.log(data);
+    }
+
+    getSelectors() {
+        return this.data.selectors;
+    }
+
+	getSkills() {
+		return this.data.skills;
+	}
+
+	getCertifications() {
+		return this.data.Certifications;
+	}
+
+	getExperience() {
+		return this.data.Experience;
+	}
+	
+	getSocials() {
+		return this.data.socials;
 	}
 }
