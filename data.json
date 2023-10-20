@@ -1,5 +1,5 @@
 {
-    "selectors":["Home", "Skills", "Certs", "Xp"],
+    "selectors":["Home", "Skills", "Certifications", "Experience"],
     "skills": {
         "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
         "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
