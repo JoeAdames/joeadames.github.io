@@ -5,13 +5,23 @@ class UI {
         this.skills = data.skills;
         this.certifications = data.Certifications;
         this.experience = data.Experience;
-        
+
+        //i dont know if these should be initialized here when i create a UI.
+        // const header = new Header(this.selectors);
+        // const skills = new Skills(this.skills);
+        // const certifications = new Certifications(this.certifications);
     }
     //build ui
     build() {
+        //not sure if they need to be initialized here when i call to build the UI.
+        //here it seems they would be in scope only of this func where instead i think in the constructor all funcs get the inits
         const header = new Header(this.selectors);
+        const skills = new Skills(this.skills);
+        const certifications = new Certifications(this.certifications);
+        const experience = new Experience(this.experience);
+        const socials = new Socials(this.socials);
+
         header.build();
-        console.log('header');
         this.reset();
     }
     //reset ui
@@ -20,23 +30,13 @@ class UI {
             element: "h1",
             textContent: "Home."
         }) 
-        let content = new Content(home);
-        content.setContent(home);
+        Content.setContent(home)
     }
 
-    skills() {
-        const  skill = ElementFactory.create({
-            element: "h1",
-            textContent: "skills"
-        }) 
-        Content().setContent(skill);
-    }
-    skill() {
-        const li = ElementFactory.create({
-            element: "li",
+    // switchTo(selected) {
+       
 
-        })
-    }
+    // }
 
 
 

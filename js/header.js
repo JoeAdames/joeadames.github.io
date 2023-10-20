@@ -17,8 +17,24 @@ class Header {
                 className: "",
                 textContent: selector,
                 onclick: () => {
-                    let content = new Content(selector);
-                    content.build();
+                    //i think i have a switch case here to call what is being built in the UI.
+                    //since all of my ui pieces are initialized i should be able to call their build(); funcs from a switcher here. 
+                    let smallSelected = selector.toLowerCase();
+                    switch(smallSelected) {
+                        case "skills":
+                            Skills.build();
+                          break;
+                        case "certifications":
+                            Certifications.build();
+                          break;
+                        case "experience":
+                            Experience.build();
+                          break;
+                        default:
+                          Content.setContent("Home");
+                      } 
+
+                    // UI.switchTo(this.selector); //this doesnt work, throws UI.switchTo is not a Ffunction
                 }
             });
             buttons.append(button)
