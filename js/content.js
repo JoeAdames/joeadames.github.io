@@ -147,12 +147,12 @@ class ContentSetter {
           textContent: jobs[job].Start
         })
         const company = ElementFactory.create({
-          element: "div",
+          element: "h3",
           className: "company",
           textContent: job
         })
         const summary = ElementFactory.create({
-          element: "div",
+          element: "p",
           className: "summary",
           textContent: jobs[job].summary
         })
@@ -162,21 +162,21 @@ class ContentSetter {
       this.setContent(experienceSection)
     }
 
-    // setSocials() {
-    //   const socials = this.dataHandler.getSocials();
-    //   Object.keys(socials).forEach(social => {
-    //     const link = ElementFactory.create({
-    //       element: "a",
-    //       className: social,
-    //       href: socials[social].website
-    //     })
-    //     console.log(link)
-    //     const name = ElementFactory.create({
-    //       element: "li",
-    //       textContent: social
-    //     })
-    //     link.append(name);
-    //     document.querySelector('.socials').append(link)
-    //   })
-    // }
+    setSocials() {
+      const socials = this.dataHandler.getSocials();
+      Object.keys(socials).forEach(social => {
+        const link = ElementFactory.create({
+          element: "a",
+          className: social,
+          href: socials[social].website
+        })
+        console.log(link)
+        const name = ElementFactory.create({
+          element: "li",
+          textContent: social
+        })
+        link.append(name);
+        document.querySelector('.socials').append(link)
+      })
+    }
   }
