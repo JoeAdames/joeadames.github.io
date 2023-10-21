@@ -1,5 +1,17 @@
 {
     "selectors":["Home", "Skills", "Certifications", "Experience"],
+    "home": {
+            "alias": "Joe.wiki",
+            "avatar": "https://pbs.twimg.com/media/CsH-7-nWYAA5MJ_.jpg",
+            "statement":"I tell you I'm going into battle, and I want only your strongest potions.",
+        "Projects":[
+            "https://github.com/JoeAdames/joeadames.github.io",
+            "https://github.com/JoeAdames/ghubfinder",
+             "https://github.com/JoeAdames/AngularTicTacToe/tree/main/Attt",
+            "https://github.com/JoeAdames/Habit",
+            "https://github.com/JoeAdames/contact-keeper"
+        ]
+    },
     "skills": {
         "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
         "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
@@ -11,17 +23,20 @@
         "Full Stack Web Development": {
             "From": "Rutgers University",
             "Date": "2017",
-            "link": "https://bootcamp.rutgers.edu/coding/"
+            "Website": "https://bootcamp.rutgers.edu/coding/",
+            "Logo": "https://1000logos.net/wp-content/uploads/2021/07/Rutgers-Scarlet-Knights-logo.png"
         },
         "Modern Javascript From The Beginning": {
             "From": "Udemy",
             "Date": "2020",
-            "link": "https://www.udemy.com/course/modern-javascript-from-the-beginning/"
+            "Website": "https://www.udemy.com/course/modern-javascript-from-the-beginning/",
+            "Logo": "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg"
         },
         "React Front to Back": {
             "From": "Udemy",
             "Date": "2021",
-            "link": "https://www.udemy.com/course/modern-react-front-to-back/"
+            "Website": "https://www.udemy.com/course/modern-react-front-to-back/",
+            "Logo": "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg"
         }
     },
     "Experience": {
@@ -60,8 +75,8 @@
         }
     },
     "socials": {
-        "twitter": {
-            "website": "twitter.com"
+        "Discord": {
+            "website": "https://discord.com/users/159407861749776384"
         },
         "LinkedIn": {
             "website": "https://www.linkedin.com/in/josephadames/"

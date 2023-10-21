@@ -5,9 +5,10 @@ class DataHandler {
     
     loadData(data) {
         this.data = data;
-		console.log(data);
     }
-
+	getHome() {
+		return this.data.home;
+	}
     getSelectors() {
         return this.data.selectors;
     }

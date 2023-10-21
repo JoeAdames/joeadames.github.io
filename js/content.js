@@ -5,7 +5,6 @@ class ContentSetter {
     }
   
     setPage() {
-      console.log(this.currentSelector)
       switch (this.currentSelector) {
         case 'Home':
           this.setHome();
@@ -35,27 +34,91 @@ class ContentSetter {
   
     setHome() {
       this.clearContent();
-  
+      const homeData = this.dataHandler.getHome();
       const home = ElementFactory.create({
         element: 'div',
-        className: 'home',
+        className: 'home grid align-center justify-center',
       });
-  
-      const statement = ElementFactory.create({
-        element: 'h1',
-        className: 'statement',
-        textContent: "Hello, My name is Joe and this is my resume."
-      });
-  
-      home.appendChild(statement);
+
+      //Aboutme
+      let userElement = this.setUser(homeData);
+
+      //projects
+      const projectsElement = this.setProjects(homeData.Projects);
+
+      //contact in footer setFooter()
+      
+      home.append(userElement, projectsElement);
       this.setContent(home)
+    }
+
+    setUser(user) {
+      const userCard = 
+      ElementFactory.create({
+        element: 'div',
+        className: 'card grid justify-center',
+      });
+      const aliasSection = ElementFactory.create({
+        element: 'div',
+        className: 'avatar-holder grid-2 align-center',
+        src: user.avatar
+      });
+      const alias = ElementFactory.create({
+        element: 'h1',
+        className: 'alias justify-end',
+        textContent: user.alias
+      });
+      const avatar = ElementFactory.create({
+        element: 'img',
+        className: 'avatar round-img justift-start',
+        src: user.avatar
+      });
+      aliasSection.append(alias, avatar);
+      const statement = ElementFactory.create({
+        element: 'h3',
+        className: 'statement hidden-overflow',
+        textContent: user.statement
+      });
+      userCard.append(aliasSection, statement)
+      return userCard
+    }
+
+    setSocials() {
+      const socials = this.dataHandler.getSocials();
+      Object.keys(socials).forEach(social => {
+        const link = ElementFactory.create({
+          element: "a",
+          className: social,
+          href: socials[social].website
+        })
+        const name = ElementFactory.create({
+          element: "li",
+          textContent: social
+        })
+        link.append(name);
+        document.querySelector('.socials').append(link)
+      })
+    }
+
+    setProjects(projects) {
+      const projectList = ElementFactory.create({
+        element: "ul",
+        className: ""
+      });
+      projects.forEach(project => {
+        const projectItem = ElementFactory.create({
+          element: "li",
+          className: "",
+          textContent: project
+        });
+        projectList.append(projectItem);
+      });
+      return projectList
     }
   
     setSkills() {
       const skills = this.dataHandler.getSkills();
       this.clearContent();
-      // looks the same as setHome, but for your skill section.
-      // iterate through each of your skills
       
       const skillsCards = ElementFactory.create({
         element: 'div',
@@ -90,33 +153,54 @@ class ContentSetter {
 
     setCerts() {
       this.clearContent();
-      // looks the same as setHome, but for your skill section.
-      // iterate through each of your skills
       const certSection = ElementFactory.create({
         element: 'div',
-        className: 'cert-section',
+        className: 'cert-section grid justify-center',
       });
       const certs = this.dataHandler.getCertifications();
+      console.log(certs)
 
       Object.keys(certs).forEach(cert => {
-        const certCard = ElementFactory.create({
+        const certInfo = ElementFactory.create({
           element: "div",
-          className: "card"
+          className: ""
+        })
+        const certCard = ElementFactory.create({
+          element: "ul",
+          className: "card grid-2 justify-center align-center"
         })
         const title = ElementFactory.create({
           element: "h3",
-          className: "",
+          className: "text-center",
           textContent: cert
         })
         const when = ElementFactory.create({
-          element: "div",
+          element: "li",
+          className: "text-center",
           textContent: certs[cert].Date
         })
         const from = ElementFactory.create({
-          element: "div",
+          element: "li",
+          className: "text-center ",
           textContent: certs[cert].From
         })
-        certCard.append(title, from, when); 
+        const logo = ElementFactory.create({
+          element: "div",
+          className: ""
+        })
+        const logoLink = ElementFactory.create({
+          element: "a",
+          className: "grid justify-center",
+          href: certs[cert].Website
+        })
+        const logoImg = ElementFactory.create({
+          element: "img",
+          src: certs[cert].Logo
+        })
+        logoLink.append(logoImg);
+        logo.append(logoLink);
+        certInfo.append(title, from, when); 
+        certCard.append(certInfo, logo)
         certSection.append(certCard);
       })
       this.setContent(certSection)
@@ -124,8 +208,6 @@ class ContentSetter {
 
     setXp() {
       this.clearContent();
-      // looks the same as setHome, but for your skill section.
-      // iterate through each of your skills
       const experienceSection = ElementFactory.create({
         element: 'div',
         className: 'experience-section',
@@ -157,27 +239,14 @@ class ContentSetter {
           className: "summary",
           textContent: jobs[job].summary
         })
-        jobCard.append(company, title, when, summary); 
+        if(jobs[job].Projects){
+          let projectContent = this.setProjects(jobs[job].Projects)
+          jobCard.append(company, title, when, summary, projectContent); 
+        } else {
+          jobCard.append(company, title, when, summary);
+        }
         experienceSection.append(jobCard);
-      })
+      });
       this.setContent(experienceSection)
     }
-
-    // setSocials() {
-    //   const socials = this.dataHandler.getSocials();
-    //   Object.keys(socials).forEach(social => {
-    //     const link = ElementFactory.create({
-    //       element: "a",
-    //       className: social,
-    //       href: socials[social].website
-    //     })
-    //     console.log(link)
-    //     const name = ElementFactory.create({
-    //       element: "li",
-    //       textContent: social
-    //     })
-    //     link.append(name);
-    //     document.querySelector('.socials').append(link)
-    //   })
-    // }
   }

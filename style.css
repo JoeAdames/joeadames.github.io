@@ -16,8 +16,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
+	letter-spacing: 2px;
 	background-color: #fff;
 	color: #333;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 a {
@@ -34,12 +37,19 @@ ul {
 }
 
 img {
-	width: 100%;
+	width: 50%;
 }
+
+/* footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+} */
 
 /* Utilities */
 .container {
-	max-width: 1100px;
+	width: 1200px;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
@@ -175,22 +185,40 @@ img {
 }
 
 /* Grid */
+.grid {
+	display: grid;
+}
+.justify-center {
+	justify-items: center;
+}
+.align-center {
+	align-items: center;
+}
+.align-start {
+	align-self: start;
+}
+.align-end {
+	align-self: end;
+}
+.justify-start {
+	justify-self: start;
+}
+.justify-end {
+	justify-self: end;
+}
 .grid-2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1rem;
 }
 
 .grid-3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1rem;
 }
 
 .grid-4 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1rem;
 }
 
 .btn {
@@ -407,5 +435,46 @@ table th {
 	.navbar ul {
 		text-align: center;
 		justify-content: center;
+	}
+}
+
+/* custom CSS */
+.hidden-overflow {
+	overflow: hidden;
+}
+.statement {
+	/* animation properties */
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	
+	-moz-animation: my-animation 15s linear infinite;
+	-webkit-animation: my-animation 15s linear infinite;
+	animation: my-animation 15s linear infinite;
+	width: 150%;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+	from { -moz-transform: translateX(100%); }
+	to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+	from { -webkit-transform: translateX(100%); }
+	to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+	from {
+	  -moz-transform: translateX(100%);
+	  -webkit-transform: translateX(100%);
+	  transform: translateX(100%);
+	}
+	to {
+	  -moz-transform: translateX(-100%);
+	  -webkit-transform: translateX(-100%);
+	  transform: translateX(-100%);
 	}
 }
