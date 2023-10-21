@@ -32,7 +32,13 @@
             "Links" :{
                 "Logo":"",
                 "website": "https://www.storis.com/"
-            }
+            },
+            "Projects": [
+                "https://www.grandhf.com/",
+                "https://www.adcockfurniture.com/",
+                "https://www.afd-furniture.com/",
+                "https://storishome.com"
+            ]
         },
         "WeatherWorks Inc.": {
             "Title": "Jr. Software Engineer",

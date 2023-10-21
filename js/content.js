@@ -104,7 +104,8 @@ class ContentSetter {
           className: "card"
         })
         const title = ElementFactory.create({
-          element: "div",
+          element: "h3",
+          className: "",
           textContent: cert
         })
         const when = ElementFactory.create({
