@@ -22,7 +22,7 @@ async function initUI() {
     const selectorManager = new SelectorManager(dataHandler, contentSetter);
   
     selectorManager.setSelectors();
-    // contentSetter.setSocials();
+    contentSetter.setSocials();
     contentSetter.setHome();
   }
 initUI();

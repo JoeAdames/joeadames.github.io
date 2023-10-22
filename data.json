@@ -1,5 +1,27 @@
 {
     "selectors":["Home", "Skills", "Certifications", "Experience"],
+    "home": {
+            "alias": "Joe.wiki",
+            "avatar": "https://pbs.twimg.com/media/CsH-7-nWYAA5MJ_.jpg",
+            "statement":"I tell you I'm going into battle, and I want only your strongest potions.",
+            "Projects": {
+                "Portfolio":{
+                    "website": "https://github.com/JoeAdames/joeadames.github.io"
+                },
+                "GithubFinder":{
+                    "website": "https://github.com/JoeAdames/ghubfinder"
+                },
+                "Angular-TicTacToe":{
+                    "website": "https://github.com/JoeAdames/AngularTicTacToe/tree/main/Attt"
+                },
+                "Habits":{
+                    "website": "https://github.com/JoeAdames/Habit"
+                },
+                "Contact Keeper":{
+                    "website": "https://github.com/JoeAdames/contact-keeper"
+                }
+            }
+    },
     "skills": {
         "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
         "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
@@ -11,17 +33,20 @@
         "Full Stack Web Development": {
             "From": "Rutgers University",
             "Date": "2017",
-            "link": "https://bootcamp.rutgers.edu/coding/"
+            "Website": "https://bootcamp.rutgers.edu/coding/",
+            "Logo": "https://1000logos.net/wp-content/uploads/2021/07/Rutgers-Scarlet-Knights-logo.png"
         },
         "Modern Javascript From The Beginning": {
             "From": "Udemy",
             "Date": "2020",
-            "link": "https://www.udemy.com/course/modern-javascript-from-the-beginning/"
+            "Website": "https://www.udemy.com/course/modern-javascript-from-the-beginning/",
+            "Logo": "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg"
         },
         "React Front to Back": {
             "From": "Udemy",
             "Date": "2021",
-            "link": "https://www.udemy.com/course/modern-react-front-to-back/"
+            "Website": "https://www.udemy.com/course/modern-react-front-to-back/",
+            "Logo": "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg"
         }
     },
     "Experience": {
@@ -30,23 +55,50 @@
             "Start": "August 2021",
             "summary": "Quickly adapting to new roles and responsibilities, I have successfully led projects, refactored code, integrated third-party tools, developed new client portals and themes, refreshed demo websites, handled support cases, and trained colleagues, demonstrating my ability to deliver high-quality results, work independently and collaboratively, learn new technologies, and solve problems effectively.",
             "Links" :{
-                "Logo":"",
+                "Logo":"https://media.licdn.com/dms/image/C4E0BAQHwEBcffxp0Tw/company-logo_200_200/0/1609273936185?e=1706140800&v=beta&t=LqGmKj6NnxGD3HEHt8XR2SQtNDD5gvI1QJcjah60d0I",
                 "website": "https://www.storis.com/"
             },
-            "Projects": [
-                "https://www.grandhf.com/",
-                "https://www.adcockfurniture.com/",
-                "https://www.afd-furniture.com/",
-                "https://storishome.com"
-            ]
+            "references": {
+                "one": {
+                    "statement": "Having known Joseph for over a year as their colleague, I am certain that he will thrive as a lead developer due to their continuous drive of excellence and commitment to giving his team the best possible chance to achieve success. During his time working with me, they have always impressed me with his ability to identify the problem and work tirelessly to fix it. Also Joseph has shown his knowledge as a developer to lead project from its infancy to its completion without any hitches and I am therefore confidently able to recommend Joseph Adames based on this experience.",
+                    "from": "Yerodin Prendergast",
+                    "Title": "Project Coordinator"
+                }
+            },
+            "Projects": {
+                "Grand Home Furniture":{
+                    "website": "https://www.grandhf.com/"
+                },
+                "Adcock Furniture":{
+                    "website": "https://www.adcockfurniture.com/"
+                },
+                "AFD Furniture":{
+                    "website": "https://www.afd-furniture.com/"
+                },
+                "Storis Home":{
+                    "website": "https://storishome.com"
+                }
+            }
         },
         "WeatherWorks Inc.": {
             "Title": "Jr. Software Engineer",
             "Start": "March 2020 - March 2021",
             "summary": "As an experienced software developer proficient in VueJS, JavaScript, jQuery, and Laravel, I have a proven track record of building and maintaining scalable web applications while adhering to rigorous testing and code review practices. My strong problem-solving and analytical skills, coupled with excellent communication and interpersonal abilities, have enabled me to develop impactful internal tools that optimize data flow for meteorologists, leading to improved efficiency and accuracy in weather forecasting. My dedication to excellence and active participation in daily code reviews further ensure the quality and consistency of the codebase.",
             "Links" :{
-                "Logo":"",
+                "Logo":"https://media.licdn.com/dms/image/D4E0BAQElcjNRmCTd4A/company-logo_200_200/0/1696862750064?e=1706140800&v=beta&t=qFyALzjfRysedqg-NP4aaTASuiFgecef0CjKUDVuk8c",
                 "website": "https://weatherworksinc.com/"
+            },
+            "references": {
+                "one": {
+                    "statement": "I was Joe Adames’ direct supervisor at WeatherWorks for the entire year he worked for our company (March 2020 through March 2021). Joe is a passionate software developer, always eager to learn and grow and would make a great addition to a well-established team.We had Joe do front-end development, working with jQuery in our legacy applications and VueJS in our newer applications; technologies in which Joe had little experience initially, but picked up proficiency through practice and hard work. He would do whatever it took to get the job done and get it done right, often improving his code on his own time. The amount of progress he made over the course of the year was impressive, going from a brand-new developer to being able to build out a feature-complete web page.Joe was a great teammate as well, learning from senior developers while also bringing new ideas to the table. He was always respectful, and mindful of everyone’s time. Although we went to fully remote work the day after Joe started with us (due to the pandemic), he was engaged and connected with the rest of the team.",
+                    "from": "Brian Silviotti",
+                    "Title": "Director of Software Development"
+                },
+                "two": {
+                    "statement": "I worked with Joe on the development team at Weather Works. We worked on a project together and I performed a number of code reviews on his code. Joe took constructive feedback well and implemented suggestions to make his code better. He reached out for help only after he had first spent time trying to figure things on his own. He was open and eager to learn new technologies and to grow. Joe is an effective communicator and a good collaborator. He would make a great addition to an established team.",
+                    "from": "Theodore Manton",
+                    "Title": "Web Developer"
+                }
             }
         },
         "Selective Insurance": {
@@ -54,14 +106,14 @@
             "Start": "December 2017 - February 2019",
             "summary": "Utilizing my expertise in SQL and programming, I develop and implement various technical solutions, effectively managing databases and software applications. My strong communication, teamwork, and problem-solving skills enable me to collaborate effectively and tackle technical challenges with innovative approaches.",
             "Links" :{
-                "Logo":"",
+                "Logo":"https://media.licdn.com/dms/image/C560BAQFm7x7u1IPLCQ/company-logo_200_200/0/1656686868307?e=1706140800&v=beta&t=QZTpMlqWFpnJ3kbqsgeZkhE62DbUVgLEWOCyvuCFyC0",
                 "website": "https://www.selective.com/"
             }
         }
     },
     "socials": {
-        "twitter": {
-            "website": "twitter.com"
+        "Discord": {
+            "website": "https://discord.com/users/159407861749776384"
         },
         "LinkedIn": {
             "website": "https://www.linkedin.com/in/josephadames/"
