@@ -100,7 +100,7 @@ class ContentSetter {
   setProjects(projects) {
     const projectList = ElementFactory.create({
       element: "div",
-      className: "grid"
+      className: "grid hide-sm"
     });
     const titleHead = ElementFactory.create({
       element: "h2",
