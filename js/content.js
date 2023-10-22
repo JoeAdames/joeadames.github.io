@@ -233,8 +233,8 @@ class ContentSetter {
         className: "company grid align-center",
       });
       const companyName = ElementFactory.create({
-        element: "div",
-        className: "company-name lead",
+        element: "h1",
+        className: "company-name",
         textContent: job
       });
       const companyLink = ElementFactory.create({
@@ -244,7 +244,7 @@ class ContentSetter {
       });
       const companyLogo = ElementFactory.create({
         element: "img",
-        className: "company-logo round-img",
+        className: "company-logo round-img hide-sm",
         src: jobs[job].Links.Logo
       });
       const titleWhen = ElementFactory.create({
