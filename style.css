@@ -50,6 +50,7 @@ img {
 /* Utilities */
 .container {
 	max-width: 40em;
+	min-width: 40em;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
@@ -71,6 +72,11 @@ img {
 .lead {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+}
+
+.bold-medium {
+	font-weight: 700;
+	font-size: 2rem;
 }
 
 .text-center {
@@ -332,6 +338,12 @@ img {
 .btn:hover {
 	opacity: 0.8;
 }
+.selector:hover {
+	text-decoration: underline;
+}
+.selected {
+	text-decoration: underline;
+}
 
 .bg-light,
 .badge-light {
@@ -417,7 +429,14 @@ table th {
 }
 
 /* Mobile Styles */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+	.container {
+		min-width: 0;
+		max-width: 40em;
+		margin: auto;
+		overflow: hidden;
+		padding: 0 2rem;
+	}
 	.hide-sm {
 		display: none;
 	}
@@ -473,9 +492,9 @@ table th {
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	
-	-moz-animation: my-animation 15s linear infinite;
-	-webkit-animation: my-animation 15s linear infinite;
-	animation: my-animation 15s linear infinite;
+	-moz-animation: my-animation 10s linear infinite;
+	-webkit-animation: my-animation 10s linear infinite;
+	animation: my-animation 10s linear infinite;
 	width: 500%;
   }
   
@@ -502,4 +521,19 @@ table th {
 	  -webkit-transform: translateX(-100%);
 	  transform: translateX(-100%);
 	}
+}
+
+.refCard .title {
+	font-weight: 700;
+}
+.hidden-element {
+	height: 0;
+	overflow: hidden;
+}
+.show-element {
+	height: fit-content;
+}
+
+.pointer {
+	cursor: pointer;
 }

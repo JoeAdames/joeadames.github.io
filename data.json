@@ -26,7 +26,7 @@
         "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
         "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
         "Databases": ["MongoDb", "SSMS"],
-        "Tools": ["Azure DevOps", "Git", "Jira/Bitbucket"],
+        "Tools": ["Figma", "Azure DevOps", "Git", "Jira/Bitbucket"],
         "Soft": ["Team builder", "Communications", "Client Relations", "Project Management"]
     },
     "Certifications": {

@@ -45,6 +45,7 @@ class ContentSetter {
     let userElement = this.setUser(homeData);
     //contact in footer setFooter()
     home.append(userElement)
+    
     this.setContent(home)
   }
 
@@ -54,29 +55,17 @@ class ContentSetter {
         element: 'div',
         className: 'grid justify-center',
       });
-    const aliasSection = ElementFactory.create({
-      element: 'div',
-      className: 'avatar-holder grid-2 align-center justify-center',
-      src: user.avatar
-    });
     const alias = ElementFactory.create({
       element: 'h1',
       className: 'alias grid justify-center',
       textContent: user.alias
     });
-    // const avatar = ElementFactory.create({
-    //   element: 'img',
-    //   className: 'avatar round-img justift-start hide-sm',
-    //   src: user.avatar
-    // });
-    const projectsElement = this.setProjects(user.Projects);
-    aliasSection.append(alias, projectsElement);
     const statement = ElementFactory.create({
       element: 'h3',
       className: 'statement hidden-overflow',
       textContent: user.statement
     });
-    userCard.append(aliasSection, statement)
+    userCard.append(alias, statement);
     return userCard
   }
 
@@ -95,34 +84,6 @@ class ContentSetter {
       link.append(name);
       document.querySelector('.socials').append(link)
     })
-  }
-
-  setProjects(projects) {
-    const projectList = ElementFactory.create({
-      element: "div",
-      className: "grid hide-sm"
-    });
-    const titleHead = ElementFactory.create({
-      element: "h2",
-      className: "section-title",
-      textContent: "Projects"
-    });
-    projectList.append(titleHead);
-    Object.keys(projects).forEach(project => {
-      const projectLink = ElementFactory.create({
-        element: "a",
-        className: "link",
-        href: projects[project].website
-      })
-      const projectItem = ElementFactory.create({
-        element: "div",
-        className: "",
-        textContent: project,
-      });
-      projectLink.append(projectItem)
-      projectList.append(projectLink);
-    });
-    return projectList
   }
 
   setSkills() {
@@ -223,11 +184,25 @@ class ContentSetter {
     const jobs = this.dataHandler.getExperience();
 
     Object.keys(jobs).forEach(job => {
-      const jobCard = ElementFactory.create({
+      //array for conditions
+      const jobItemElementArr = [];
+
+      //each Job
+      const jobItem = ElementFactory.create({
         element: "div",
         className: "job-card"
       });
-      const jobCardElementArr = [];
+
+      //companyHeader
+      const companyHeader = ElementFactory.create({
+        element: "div",
+        className: "company-header grid-2",
+        onclick: () => {
+          e.preventDefault();
+        }
+      });
+
+      //companyname, title, dates, logo +/- go into companyHeader
       const company = ElementFactory.create({
         element: "div",
         className: "company grid align-center",
@@ -267,27 +242,24 @@ class ContentSetter {
         className: "summary",
         textContent: jobs[job].summary
       });
-      companyLink.append(companyLogo)
+      companyLink.append(companyLogo,);
       company.append(companyName, titleWhen);
-      const companyHeader = ElementFactory.create({
-        element: "div",
-        className: "company-header grid-2"
-      });
-      companyHeader.append(company, companyLink)
-      jobCardElementArr.push(companyHeader, summary);
+
+      companyHeader.append(company, companyLink);
+      jobItemElementArr.push(companyHeader, summary);
       if(jobs[job].references){
         const references = this.setRefs(jobs[job].references);
-        jobCardElementArr.push(references);
+        jobItemElementArr.push(references);
       }
       if (jobs[job].Projects) {
         let projectContent = this.setProjects(jobs[job].Projects)
-        jobCardElementArr.push(projectContent);
+        jobItemElementArr.push(projectContent);
       }
-      jobCardElementArr.forEach(item => {
-        jobCard.append(item);
+      jobItemElementArr.forEach(item => {
+        jobItem.append(item);
       })
       
-      experienceSection.append(jobCard);
+      experienceSection.append(jobItem);
     });
     this.setContent(experienceSection)
   }
@@ -296,28 +268,45 @@ class ContentSetter {
       element: "div",
       className: "grid"
     });
+    const titleDropper = ElementFactory.create({
+      element: "div",
+      className: "grid-2",
+      onclick: (e) => {
+        const el = e.target.parentElement.parentElement.querySelector('.hidden-element')
+        if(el) {
+          el.classList.add('show-element');
+          el.classList.remove('hidden-element')
+          e.target.parentElement.querySelector('.plus').textContent = "-"
+        } else {
+          e.target.parentElement.parentElement.querySelector('.show-element').classList.add('hidden-element');
+          e.target.parentElement.parentElement.querySelector('.show-element').classList.remove('show-element');
+          e.target.parentElement.querySelector('.plus').textContent = "+"
+        }
+      }
+    });
     const titleHead = ElementFactory.create({
-      element: "h2",
-      className: "section-title",
+      element: "div",
+      className: "section-title bold-medium",
       textContent: "References"
     });
-    refHolder.append(titleHead);
+    const plus = ElementFactory.create({
+      element: "span",
+      className: "bold-medium hide-sm grid justify-center plus",
+      textContent: "+"
+    })
+    titleDropper.append(titleHead, plus);
+    refHolder.append(titleDropper);
+    const refElem = ElementFactory.create({
+      element: "div",
+      className: "hidden-element"
+    })
     Object.keys(references).forEach(reference => {
       const refCard = ElementFactory.create({
         element:"div",
         className: "refCard"
       });
-        const persona = ElementFactory.create({
-            element: "div",
-            className: "grid-2"
-        });
-        const from = ElementFactory.create({
-          element:"h3",
-          className: "from",
-          textContent: references[reference].from
-        })
         const title = ElementFactory.create({
-          element:"h3",
+          element:"p",
           className: "title",
           textContent: references[reference].Title
         })
@@ -326,10 +315,72 @@ class ContentSetter {
           className: "reference",
           textContent: references[reference].statement
         })
-        persona.append(from, title);
-        refCard.append(persona, statement)
-        refHolder.append(refCard)
+        refCard.append(statement, title)
+        refElem.append(refCard)
     })
+    refHolder.append(refElem);
+
     return refHolder
+  }
+  setProjects(projects) {
+    const projectList = ElementFactory.create({
+      element: "div",
+      className: "grid hide-sm pointer"
+    });
+
+    const titleDropper = ElementFactory.create({
+      element: "div",
+      className: "grid-2",
+      onclick: (e) => {
+        const el = e.target.parentElement.parentElement.querySelector('.hidden-element')
+        if(el) {
+          el.classList.add('show-element');
+          el.classList.remove('hidden-element')
+          e.target.parentElement.querySelector('.plus').textContent = "-"
+        } else {
+          e.target.parentElement.parentElement.querySelector('.show-element').classList.add('hidden-element');
+          e.target.parentElement.parentElement.querySelector('.show-element').classList.remove('show-element');
+          e.target.parentElement.querySelector('.plus').textContent = "+"
+        }
+      }
+    });
+
+    const titleHead = ElementFactory.create({
+      element: "div",
+      className: "section-title bold-medium",
+      textContent: "Projects"
+    });
+    const plus = ElementFactory.create({
+      element: "span",
+      className: "bold-medium hide-sm grid justify-center plus",
+      textContent: "+"
+    });
+
+    titleDropper.append(titleHead, plus);
+    projectList.append(titleDropper);
+
+    const linkList = ElementFactory.create({
+      element: "div",
+      className: "hidden-element"
+    });
+
+    Object.keys(projects).forEach(project => {
+      const projectLink = ElementFactory.create({
+        element: "a",
+        className: "link",
+        href: projects[project].website
+      })
+      const projectItem = ElementFactory.create({
+        element: "div",
+        className: "",
+        textContent: project,
+      });
+      projectLink.append(projectItem)
+      linkList.append(projectLink);
+    });
+
+    projectList.append(linkList);
+
+    return projectList
   }
 }
