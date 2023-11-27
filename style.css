@@ -49,7 +49,7 @@ img {
 
 /* Utilities */
 .container {
-	max-width: 40em;
+	max-width: 50em;
 	min-width: 40em;
 	margin: auto;
 	overflow: hidden;
@@ -338,11 +338,15 @@ img {
 .btn:hover {
 	opacity: 0.8;
 }
+.selector {
+	padding: 5px 30px 5px 30px;
+	border-radius: 50px;
+}
 .selector:hover {
-	text-decoration: underline;
+	box-shadow: 1px 1px 8px 8px gray;
 }
 .selected {
-	text-decoration: underline;
+	box-shadow: 1px 1px 8px 8px gray;
 }
 
 .bg-light,
@@ -408,6 +412,7 @@ table th {
 	width: 100%;
 	opacity: 0.9;
 	margin-bottom: 1rem;
+	gap: 1rem;
 }
 
 .navbar ul {
