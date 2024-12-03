@@ -2,32 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.5.0.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-    <title>Software Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
-    <header> 
-        <div class="sidebar">
-            <ul class="buttons navbar"></ul>
-         </div>
+<body class=" bg-dark text-light m-lg-5">
+    <header id="introduction">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3 justify-content-center">
+                    <div id="cred" class="d-flex flex-column justify-content-center">
+                        <div class="name p-1">Joseph Adames</div>
+                        <div class="title p-1">Web Developer</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 offset-sm-6">
+                    <div class="d-flex flex-column justify-content-center social">
+                        <div class="linkedIn text-end p-1"><a
+                                href="https://www.linkedin.com/in/josephadames/">Linkedin</a></div>
+                        <div class="github text-end p-1"><a href="https://github.com/JoeAdames">Github</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="content-container"></div>
-    <footer>
-        <ul class="socials grid-4 justify-center align-center"></ul>
-    </footer>
-</div>
+    <section id="Skills-Education" class="mt-4">
+        <div class="container">
+            <div class="row"> 
+                <div id="skills" class="col-lg-6 col-md-6 col-sm-12 d-none d-lg-block">
+                    <h6>Skills</h6>
+                    <div class="row h-100 align-content-center">
+                        <div class="col-lg-4 col-md-4 col-sm-4 mt-2">
+                            <ul>
+                                <li>Html</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 mt-2">
+                            <ul>
+                                <li>VueJs</li>
+                                <li>ReactJs</li>
+                                <li>NodeJs w/ Express</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 mt-2">
+                            <ul>
+                                <li>SQL</li>
+                                <li>GIT</li>
+                                <li>NodeJs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="col-lg-6 col-md-6 col-sm-12">
+                    <h6 class="text-lg-end">Education</h6>
+                    <div class="row h-100 align-content-center"> 
+                        <div id="school" class="text-center">Rutger's University</div>
+                        <div id="certifcation" class="text-center">Full Stack Web Development (MERN)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="mt-4">
+        <div class="container d-flex flex-column">
+            <h4>Experience</h4>
+            <div id="item" class="card glass mb-4">
+                <div class="card-body">
+                    <div class="card-title text-light">
+                        <div class="row g-2">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div>Front End Developer @ <a href="https://www.storis.com/">Storis Inc.</a> </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end">
+                                <div class="">Aug. 2021 - Nov. 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text d-none d-lg-block">
+                        <div id="brands" class="card-text mb-2
+                        text-light ">
+                            <h6 class="text-center">Brands I've worked with</h6>
+                            <div class="row mt-2">
+                                <div id="Grand" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"> <a
+                                        href="https://www.grandhf.com/">Grand Home Furniture</a></div>
+                                <div id="FDE" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"><a
+                                        href="https://stores.ashleyfurniture.com/store">Ashley Home Furniture Retailers</a>
+                                </div>
+                                <div id="ADCOCK" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"><a
+                                        href="https://www.adcockfurniture.com/">ADCOCK</a></div>
+                            </div>
+                            <div class="row mt-2">
+                                <div id="AFDFURN" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"><a
+                                        href="https://www.afd-furniture.com/">AFDFURN</a></div>
+                                <div id="SANDY'S" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"><a
+                                        href="https://sandysfurniture.com/">Sandy's</a></div>
+                                <div id="LUXEOUT" class="col-lg-4 col-md-4 col-sm-4 text-center pt-1"><a
+                                        href="https://luxeoutdoorliving.com/">Luxout</a></div>
+                            </div>
+                        </div>
+                        <p class="text-light">Led and contributed to numerous projects, but the following stand out for
+                            their impact and innovation:</p>
+                        <ul class="text-light">
+                            <strong>Monthly Maintenance Plan - Strategic Solutions Architect</strong>
+                            <li>After a year on the team, I identified opportunities for development as clients viewed
+                                site overhauls as burdensome.</li>
+                            <li>To address this, I innovated and introduced a Monthly Maintenance Plan, offering clients
+                                guaranteed hours each month to discuss goals, review site code, and address limitations.
+                            </li>
+                            <li>This initiative fostered stronger client relationships, increased engagement in site
+                                improvements, and allowed clients to work at their own pace, all while providing
+                                consistent revenue for the team.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div id="item" class="card glass mb-4">
+                <div class="card-body">
+                    <div class="card-title text-light">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div>Jr. Front End Engineer @ <a href="https://weatherworksinc.com/">Weatherworks
+                                        Inc.</a> </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end">
+                                <div class="">Mar. 2020 - Mar. 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text d-none d-lg-block">
+                        <p class="text-light">Updated, optimized, and documented legacy jQuery/PHP code bases.</p>
+                        <ul class="text-light">
+                            <strong>Meteorologic Data Overhaul - Lead Designer & Developer</strong>
+                            <li>Collaborated with meteorologists to understand essential data flows and visualization
+                                preferences for forecasting.</li>
+                            <li>Engineered and executed an optimized tool using Vue.js, streamlining data presentation
+                                by reducing visual clutter and enhancing output accuracy through RESTful API
+                                integration.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="item" class="card glass mt-2">
+                <div class="card-body">
+                    <div class="card-title text-light">
+                        <div class="row g-2">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div>Advanced Algorithm's & Applications intern @ <a href="https://www.selective.com/">Selective Insurance</a></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 text-md-end">
+                                <div class="">Aug. 2017 - Dec. 2019</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-text d-none d-lg-block">
+                        <p class="text-light">Reviewed queries written in SQL for quality assurance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="personal-projects"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-<script src="js/content.js"></script>
-<script src="js/element.js"></script>
-<script src="js/selector.js"></script>
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
+<style>
+    .glass {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.9px);
+        -webkit-backdrop-filter: blur(5.9px);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+</style>
+
 </html>
