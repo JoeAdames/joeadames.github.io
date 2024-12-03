@@ -4,27 +4,6 @@ class ContentSetter {
     this.currentSelector;
   }
 
-  setPage() {
-    switch (this.currentSelector) {
-      case 'Home':
-        this.setHome();
-        break;
-      case 'Skills':
-        this.setSkills();
-        break;
-      case 'Certifications':
-        this.setCerts();
-        break;
-      case 'Experience':
-        this.setXp();
-        break;
-      default:
-        this.setPage(home);
-        break;
-      // ... others
-    }
-  }
-
   clearContent() {
     document.querySelector('.content-container').innerHTML = '';
   }

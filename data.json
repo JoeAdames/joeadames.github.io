@@ -1,26 +1,9 @@
 {
   "selectors": ["Home", "Skills", "Certifications", "Experience"],
   "home": {
-    "alias": "Joe.wiki",
-    "avatar": "https://pbs.twimg.com/media/CsH-7-nWYAA5MJ_.jpg",
-    "statement": "I tell you I'm going into battle, and I want only your strongest potions.",
-    "Projects": {
-      "Portfolio": {
-        "website": "https://github.com/JoeAdames/joeadames.github.io"
-      },
-      "GithubFinder": {
-        "website": "https://github.com/JoeAdames/ghubfinder"
-      },
-      "Angular-TicTacToe": {
-        "website": "https://github.com/JoeAdames/AngularTicTacToe/tree/main/Attt"
-      },
-      "Habits": {
-        "website": "https://github.com/JoeAdames/Habit"
-      },
-      "Contact Keeper": {
-        "website": "https://github.com/JoeAdames/contact-keeper"
-      }
-    },
+    "alias": "Joseph Adames",
+    "avatar": "",
+    "statement": "Hey",
     "About": {
       "statement": "Experienced Front End Developer with a proven track record in leading, architecting, and building projects with modern JavaScript. Seeking to leverage expertise in JavaScript, Javascript Frameworks, and Node to contribute to a dynamic team, enhance client business objectives, and craft exceptional web-based applications.",
       "bullets": [
@@ -31,16 +14,10 @@
     }
   },
   "skills": {
-    "Programming": ["Ecmascript", "Typescript", "SQL", "Python"],
-    "Frameworks": ["React/Next", "VueJS", "Angular", "Express"],
-    "Databases": ["MongoDb", "SSMS"],
-    "Tools": ["Figma", "Azure DevOps", "Git", "Jira/Bitbucket"],
-    "Soft": [
-      "Team builder",
-      "Communications",
-      "Client Relations",
-      "Project Management"
-    ]
+    "standard": ["Semantic HTML", "CSS3", "Javascript/ES6+/JSX/Typescript jQuery"],
+    "framework": ["ReactJs", "Vite", "NodeJs", "Tailwind", "Babel", "Webpack", "Cypress/Jest"],
+    "tools": ["Git", "Github", "Jira", "Figma/Canva", "Midjourney", "GPT","Insomnia/Postman"]
+
   },
   "Certifications": {
     "Full Stack Web Development": {
@@ -66,18 +43,15 @@
     "Storis Inc.": {
       "Title": "Front End Developer",
       "Start": "August 2021",
-      "summary": "Quickly adapting to new roles and responsibilities, I have successfully led projects, refactored code, integrated third-party tools, developed new client portals and themes, refreshed demo websites, handled support cases, and trained colleagues, demonstrating my ability to deliver high-quality results, work independently and collaboratively, learn new technologies, and solve problems effectively.",
       "bullets": [
-        "Led and successfully delivered multiple React projects from inception to completion, emphasizing modularization and clear task execution.",
-        "Established and maintained third-party integrations, ensuring seamless functionality.",
-        "Developed and launched an internal client portal, resulting in increased customer satisfaction and reduced support costs.",
-        "Refreshed the company demo website, providing live demos to Sales, Managers, and the company President, enhancing product understanding.",
-        "Generated additional revenue by creating new themes for client purchase.",
-        "Conducted framework/plugin upgrades, handled support cases, and trained new employees in HTML/CSS/JS/JQUERY.",
-        "Demonstrated strong problem-solving and analytical skills, consistently delivering high-quality results on time and within budget."
+        "Led various web development projects, working closely with designers to delegate tasks efficiently. This teamwork has allowed us to launch websites faster and streamline our workflow, making the whole process smoother and more enjoyable for everyone involved.",
+        "Collaborated on building numerous websites for top 500 furniture retailers using HTML, CSS, and Javascript, helping to improve their online presence and provide a better experience for their customers.",
+        "Written detailed documentation to guide clients in editing and iterating on the custom code we develop in-house. This makes it easy for them to make updates and modifications smoothly.",
+        "Developed a reusable component system using HTML, CSS, and Javascript creating a library of custom themes and designs. This innovation significantly reduced development time, allowing us to focus more on designing, implementing, and testing for our clients.",
+        "Led a team project to develop a subscription service. This service added maintenance hours for clients, doubling our previous year's revenue and strengthening client relationships.",
+        "Led a team project to develop a subscription service. This service added maintenance hours for clients, doubling our previous year's revenue and strengthening client relationships."
       ],
       "Links": {
-        "Logo": "https://media.licdn.com/dms/image/C4E0BAQHwEBcffxp0Tw/company-logo_200_200/0/1609273936185?e=1706140800&v=beta&t=LqGmKj6NnxGD3HEHt8XR2SQtNDD5gvI1QJcjah60d0I",
         "website": "https://www.storis.com/"
       },
       "references": {
@@ -85,6 +59,9 @@
           "statement": "Having known Joseph for over a year as their colleague, I am certain that he will thrive as a lead developer due to their continuous drive of excellence and commitment to giving his team the best possible chance to achieve success. During his time working with me, they have always impressed me with his ability to identify the problem and work tirelessly to fix it. Also Joseph has shown his knowledge as a developer to lead project from its infancy to its completion without any hitches and I am therefore confidently able to recommend Joseph Adames based on this experience.",
           "from": "Yerodin Prendergast",
           "Title": "Project Coordinator"
+        },
+        "two": {
+          "statement": "./images/Reccs/Braun.png"
         }
       },
       "Projects": {
@@ -105,15 +82,13 @@
     "WeatherWorks Inc.": {
       "Title": "Jr. Software Engineer",
       "Start": "March 2020 - March 2021",
-      "summary": "As an experienced software developer proficient in VueJS, JavaScript, jQuery, and Laravel, I have a proven track record of building and maintaining scalable web applications while adhering to rigorous testing and code review practices. My strong problem-solving and analytical skills, coupled with excellent communication and interpersonal abilities, have enabled me to develop impactful internal tools that optimize data flow for meteorologists, leading to improved efficiency and accuracy in weather forecasting. My dedication to excellence and active participation in daily code reviews further ensure the quality and consistency of the codebase.",
       "bullets": [
-        "Developed internal tools optimizing Meteorologists' data reading and sending processes, improving efficiency and accuracy.",
-        "Created dynamic VueJS components to meet daily ticket requirements.",
-        "Participated in daily PRs and code reviews, ensuring codebase quality and consistency.",
-        "Contributed significantly to public safety, the economy, and the environment by enhancing the efficiency and accuracy of Meteorologists' data flow."
+        "Created internal tools using HTML, CSS, and JavaScript that improved the presentation of data to meteorologists, enhancing their decision-making processes.",
+        "Maintained and updated legacy environments using jQuery and PHP, ensuring continued operations.",
+        "Participated in regular code reviews, promoting best practices and quality standards within the team.",
+        "Leveraged the Vue.js framework to enhance client and internal applications by seamlessly incorporating functional and visual weather data. This involved integrating RESTful APIs, which significantly improved user interfaces and supported better decision-making capabilities."
       ],
       "Links": {
-        "Logo": "https://media.licdn.com/dms/image/D4E0BAQElcjNRmCTd4A/company-logo_200_200/0/1696862750064?e=1706140800&v=beta&t=qFyALzjfRysedqg-NP4aaTASuiFgecef0CjKUDVuk8c",
         "website": "https://weatherworksinc.com/"
       },
       "references": {
@@ -139,20 +114,13 @@
         "Demonstrated excellent communication, teamwork, and problem-solving skills."
       ],
       "Links": {
-        "Logo": "https://media.licdn.com/dms/image/C560BAQFm7x7u1IPLCQ/company-logo_200_200/0/1656686868307?e=1706140800&v=beta&t=QZTpMlqWFpnJ3kbqsgeZkhE62DbUVgLEWOCyvuCFyC0",
         "website": "https://www.selective.com/"
       }
     }
   },
   "socials": {
-    "Discord": {
-      "website": "https://discord.com/users/159407861749776384"
-    },
     "LinkedIn": {
       "website": "https://www.linkedin.com/in/josephadames/"
-    },
-    "Github": {
-      "website": "https://github.com/JoeAdames"
     }
   }
 }
