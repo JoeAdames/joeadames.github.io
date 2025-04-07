@@ -6,7 +6,10 @@
   padding: 2rem;
   font-weight: normal;
 }
-
+ul {
+  /* list-style: none; */
+  padding-inline-start: 1rem;
+}
 a,
 .green {
   text-decoration: none;

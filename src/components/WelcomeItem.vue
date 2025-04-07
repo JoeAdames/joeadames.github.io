@@ -1,8 +1,5 @@
 <template>
   <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
     <div class="details">
       <h3>
         <slot name="heading"></slot>
@@ -21,7 +18,7 @@
 
 .details {
   flex: 1;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 i {
