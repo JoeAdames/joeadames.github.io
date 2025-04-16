@@ -38,6 +38,16 @@ const roles = [
       'Delivered seamless user interactions and intuitive alerts by designing and developing interactive components in Vue.js to enhance an existing tasking tool.',
     ],
   },
+  {
+    position: 'Intern',
+    company: 'Selective Insurance',
+    duration: '2017-2019',
+    duties: [
+      'Ensured SQL query accuracy and compliance via QA reviews in Informatica.',
+      'Improved report clarity by documenting predictive algorithm outputs.',
+      'Enhanced team insights through presentations on key findings.',
+    ],
+  },
 ]
 </script>
 
