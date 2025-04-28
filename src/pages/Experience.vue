@@ -41,7 +41,7 @@ const roles = [
   {
     position: 'Intern',
     company: 'Selective Insurance',
-    duration: '2017-2019',
+    duration: '2017 - 2019',
     duties: [
       'Ensured SQL query accuracy and compliance via QA reviews in Informatica.',
       'Improved report clarity by documenting predictive algorithm outputs.',
