@@ -33,3 +33,9 @@
 .jet-bg {
   background-color: #2d2d2a !important;
 }
+@media (min-width: 768px) {
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+}

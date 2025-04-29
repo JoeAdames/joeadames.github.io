@@ -9,7 +9,7 @@ function scrollToDiv(divId) {
 navBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-    let scrollId = btn.textContent.toLowerCase();
+    let scrollId = btn.querySelector("strong").textContent.toLowerCase();
     scrollToDiv(scrollId);
   });
 });
