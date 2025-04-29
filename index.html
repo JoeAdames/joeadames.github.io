@@ -18,10 +18,20 @@
     </header>
     <nav class="container text-center border-bottom border-5 border-black">
       <div class="row p-4 fs-1">
-        <div class="col-md shimmer-text text-decoration-underline"><strong>Home</strong></div>
-        <!-- <div class="col-md shimmer-text">Portfolio</div> -->
-        <div class="col-md shimmer-text text-decoration-underline""><strong>Experience</strong></div>
-        <div class="col-md shimmer-text text-decoration-underline""><strong>Contact</strong></div>
+        <div class="col-md shimmer-text text-decoration-underline"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg><strong class="ps-2">Home</strong></div>
+        <div class="col-md shimmer-text text-decoration-underline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+          <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"/>
+          </svg><strong class="ps-2">Portfolio</strong>
+        </div>
+        <div class="col-md shimmer-text text-decoration-underline""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+          <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+        </svg><strong class="ps-2">Experience</strong></div>
+        <div class="col-md shimmer-text text-decoration-underline""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+        </svg><strong class="ps-2">Contact</strong></div>
       </div>
     </nav>
     <!-- ABOUT -->
@@ -45,7 +55,7 @@
       <div class="display-1 text-center">Portfolio</div>
       <div class="container">
         <div class="row g-1 gap-3 justify-content-evenly mt-5 flex-wrap">
-          <div class="col p-5" style="min-width: 175px">
+          <div class="col" style="min-width: 175px">
             <div class="title fs-1 m-3">Project 1</div>
             <img class="img-fluid m-1" src="./src/imgs/gears.jpg" alt="" />
             <p class="fs-4 m-3">
@@ -53,7 +63,7 @@
               temporibus saepe sint odit harum modi quia neque reiciendis
               deserunt in magnam optio velit, voluptates repudiandae.
             </p>
-            <a class="fs-4 m-2" href="#">Link</a>
+            <a class="fs-4 m-2 shimmer-text" href="#"><strong>Link</strong></a>
           </div>
         </div>
       </div>
@@ -88,10 +98,15 @@
               by utilizing Agile methodologies, implementing Jira Kanban for
               task tracking, and overseeing Git/GitHub version control.
             </li>
-            <li class="p-2 fs-3">
-              <strong>Optimized website performance</strong> by leveraging
-              browser developer tools, improving load times and overall user
-              experience.
+            <li class="p-2 fs-3 d-flex align-items-center gap-3">
+                <path d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A5 5 0 0 0 3 6h10a5 5 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A5 5 0 0 0 8 1a5 5 0 0 0-2.731.811l-.29-.956z"/>
+                <path d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975"/>
+              </svg>
+              <p> 
+                <strong>Optimized website performance</strong> by leveraging
+                browser developer tools, improving load times and overall user
+                experience.
+              </p>
             </li>
             <li class="p-2 fs-3">
               <strong

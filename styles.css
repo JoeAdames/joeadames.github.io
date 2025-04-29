@@ -11,12 +11,13 @@
   color: #c14953 !important;
   cursor: pointer;
 }
+.shimmer-text:hover {
+  color: #848fa5 !important;
+}
 .shimmer-bg {
   background-color: #c14953 !important;
 }
-.cg-border {
-  border-color: #848fa5 !important;
-}
+
 .cg-bg {
   background-color: #848fa5 !important;
 }
