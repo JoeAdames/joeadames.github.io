@@ -1,5 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  font-family: "Work Sans", sans-serif !important;
+.pearl-text {
+  color: #e5dcc5 !important;
+}
+.pearl-bg {
+  background-color: #e5dcc5 !important;
+}
+
+.shimmer-text {
+  color: #c14953 !important;
+  cursor: pointer;
+}
+.shimmer-bg {
+  background-color: #c14953 !important;
+}
+.cg-border {
+  border-color: #848fa5 !important;
+}
+.cg-bg {
+  background-color: #848fa5 !important;
+}
+.dg-text {
+  color: #4c4c47 !important;
+}
+.dg-bg {
+  background-color: #4c4c47 !important;
+}
+.jet-text {
+  color: #2d2d2a !important;
+}
+.jet-bg {
+  background-color: #2d2d2a !important;
 }
