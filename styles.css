@@ -13,9 +13,13 @@
 }
 .shimmer-text:hover {
   color: #848fa5 !important;
+  text-shadow: 1px 1px #2d2d2a;
 }
 .shimmer-bg {
   background-color: #c14953 !important;
+}
+.cg-text {
+  color: #4c4c47 !important;
 }
 
 .cg-bg {
