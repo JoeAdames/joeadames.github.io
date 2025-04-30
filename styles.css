@@ -3,6 +3,12 @@
 .pearl-text {
   color: #e5dcc5 !important;
 }
+a:hover {
+  color: #848fa5 !important;
+  text-shadow: 1px 1px #2d2d2a;
+  cursor: pointer;
+}
+
 .pearl-bg {
   background-color: #e5dcc5 !important;
 }
