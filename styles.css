@@ -43,6 +43,10 @@ a:hover {
 .jet-bg {
   background-color: #2d2d2a !important;
 }
+.hide {
+  display: none !important;
+}
+
 @media (min-width: 768px) {
   .sticky {
     position: sticky;
