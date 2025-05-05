@@ -12,6 +12,9 @@ a:hover {
 .pearl-bg {
   background-color: #e5dcc5 !important;
 }
+.pearl-border {
+  border-color: #e5dcc5 !important;
+}
 
 .shimmer-text {
   color: #c14953 !important;
