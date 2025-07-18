@@ -1,11 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { GithubProvider } from "./context/GithubProvider";
+import Repositories from "./components/Repositories";
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <GithubProvider>
       <div className="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
         <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-6 shadow-md">
           <div className="container mx-auto px-4 flex justify-between items-center">
@@ -78,11 +78,12 @@ function App() {
             </div>
           </section>
 
+          <Repositories />
+
           {/* Contact Section */}
           <section>
             <h2 className="text-2xl font-bold mb-4">Contact</h2>
             <p className="text-lg mb-4">Let’s work together! Reach me at:</p>
-            {/* <p className="font-semibold">📧 yourname@email.com</p> */}
             <p className="font-semibold">
               💼{" "}
               <a
@@ -108,7 +109,7 @@ function App() {
           © {new Date().getFullYear()} J A. All rights reserved.
         </footer>
       </div>
-    </>
+    </GithubProvider>
   );
 }
 
