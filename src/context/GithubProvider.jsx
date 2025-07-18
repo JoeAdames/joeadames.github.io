@@ -12,7 +12,10 @@ export const GithubProvider = ({ children }) => {
       try {
         const res = await fetch("https://api.github.com/users/JoeAdames/repos");
         const data = await res.json();
-        setRepos(data);
+        const sorted = await data.sort(
+          (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
+        );
+        setRepos(sorted);
       } catch (err) {
         setError(error);
       } finally {
