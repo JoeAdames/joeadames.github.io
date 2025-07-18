@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GithubProvider } from "./context/GithubProvider";
+import Projects from "./components/Projects";
 import Repositories from "./components/Repositories";
 import "./App.css";
 
@@ -50,34 +51,7 @@ function App() {
               ))}
             </div>
           </section>
-
-          {/* Projects Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Project Card */}
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  Custom Component Library
-                </h3>
-                <p>
-                  Built and documented a responsive, object-oriented UI library
-                  for enterprise use, reducing design meeting time by 50%.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-md p-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  Client Billing Portal
-                </h3>
-                <p>
-                  Developed a self-service billing & shipping portal integrating
-                  PayPal and Stripe APIs to automate manual processes.
-                </p>
-              </div>
-            </div>
-          </section>
-
+          <Projects />
           <Repositories />
 
           {/* Contact Section */}

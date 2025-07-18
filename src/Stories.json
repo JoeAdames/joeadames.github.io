@@ -1,0 +1,42 @@
+[
+  {
+    "fullName": "Introducing Version Control and Documentation to Scale Client Workload",
+    "name": "Implementing Agile Workflows & Quality Gates",
+    "shortDescription": "Drove the implementation of agile practices, such as code reviews, version control, and ensuring continuous improvement and higher-quality deliverables.",
+    "paragraphs": [
+      "When I joined my previous team, I quickly discovered a recurring issue: our clients—mostly in the furniture retail sector—struggled to prioritize website updates. During peak retail holidays, multiple clients would demand significant website changes all at once, often assuming these updates could only happen during these narrow timeframes. With no senior developers left on my team just months into my role, I was suddenly part of a swamped team of two developers and a single designer handling many clients—all needing updates ranging from small tweaks to full redesigns.",
+      "My immediate challenge was to find a way to scale our work, track what had been done for each client, and avoid bottlenecks in the future. We had no centralized system to track code history, no documentation, and no visibility into when updates were last made. This left us reactive and inefficient.",
+      "I approached our engineering department and proposed creating a dedicated GitHub repository within the company’s enterprise account to store and manage all our client code for our team. This allowed us to version control all website updates, assign clear commit histories, and document who worked on what and when. It became the foundation for code reviews, task tracking, and onboarding.",
+      "By the end of my second year, every client had their codebase organized, documented, and stored securely. This drastically improved our ability to work efficiently, reduced duplicated effort, and made onboarding new developers significantly easier. We could now maintain consistency across client work, and we had a clear history of changes to refer back to when questions arose."
+    ]
+  },
+  {
+    "fullName": "Reducing Design Bottlenecks with a Custom Component Library",
+    "name": "Custom Component Library",
+    "shortDescription": "Built and documented a responsive, object-oriented UI library for enterprise use, reducing design meeting time by 50%.",
+    "paragraphs": [
+      "Our team was constantly bogged down in meetings and design revisions. Every client wanted custom design work for their site, but we only had one designer, which meant even simple requests could stretch over days. Our dev team often had to wait for finalized mockups, delaying builds and increasing frustration",
+      "We needed a way to speed up the design phase without sacrificing quality or client input. The goal was to cut down on meetings, reduce the back-and-forth on designs, and give clients clarity and confidence in their options.",
+      "I proposed building a component library—a curated set of reusable, pre-designed elements tailored to common client needs. Think: hero banners, CTAs, product grids, SEO blocks, etc. We designed each component with flexibility in mind and presented them to clients in a visual catalog. Clients could simply choose what they needed, and we’d customize from there.",
+      "The component library reduced design turnaround time drastically. Meetings went from hours to minutes, development started sooner, and we maintained high visual standards. Clients still got tailored experiences, but we avoided unnecessary overhead. Ultimately, this let us deliver faster while maintaining or even increasing project margins."
+    ]
+  },
+  {
+    "fullName": "",
+    "name": "Client Billing Portal",
+    "shortDescription": "Developed a self-service billing & shipping portal integrating PayPal and Stripe APIs to automate manual processes.",
+    "paragraphs": []
+  },
+  {
+    "fullName": "Creating a Maintenance Plan to Smooth Out Workload and Generate Consistent Revenue",
+    "name": "Website Care Retainer",
+    "shortDescription": "This model addresses the challenge of fluctuating workload and client requests by offering an optional monthly retainer for website maintenance and updates, spreading out work and revenue across the year.",
+    "paragraphs": [
+      "I realized the holiday bump wasn’t a one-time event. These surges happened around every retail holiday. Our clients assumed their only window for updates was during major sales periods, which overwhelmed our small team and created a cycle of burnout and missed opportunities.",
+      "I needed to find a way to distribute client workload across the calendar year, reduce last-minute requests, and ensure our team could deliver consistently high-quality work. I also saw an opportunity to build predictable revenue and deepen client relationships.",
+      "I pitched a “Maintenance Plan” model to my Manager as an optional monthly retainer. Clients could purchase a fixed number of hours each month—typically between 12 to 36 hours—for site reviews, performance tuning, accessibility updates, bug fixes, and prep for upcoming sales. This let us proactively manage their sites and pace out improvements.",
+      "Instead of reacting to urgent requests, I could now plan ahead, prioritize work, and coordinate with our designer for upcoming needs. Clients appreciated the attention and predictability. We no longer had to scramble to fit months of work into a single holiday week.",
+      "The Maintenance Plan became a core part of our workflow. It generated steady revenue, improved client satisfaction, and smoothed out our workload across the year. Site performance, accessibility, and design quality improved overall, and we had more time to focus on long-term improvements rather than last-minute patches."
+    ]
+  }
+]
