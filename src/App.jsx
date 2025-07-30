@@ -3,6 +3,7 @@ import { GithubProvider } from "./context/GithubProvider";
 import Projects from "./components/Projects";
 import Repositories from "./components/Repositories";
 import "./App.css";
+import "./index.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -15,14 +16,12 @@ function App() {
     <GithubProvider>
       <div className="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
         <Header />
-
         <main className="container mx-auto px-4 py-10 flex-1">
           <About />
-          {/* <Skills /> */}
+          <Skills />
           <Experience />
           <Projects />
           <Repositories />
-          <Contact />
         </main>
         <Footer />
       </div>

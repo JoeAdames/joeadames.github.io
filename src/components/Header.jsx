@@ -3,7 +3,7 @@ import React from "react";
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-black to-gray-600 text-white py-6 shadow-md">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-col gap-y-2 sm:flex-row justify-between items-center">
         <h1 className="text-3xl font-bold tracking-tight leading-snug">
           Joseph Adames
         </h1>

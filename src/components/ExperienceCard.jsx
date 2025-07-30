@@ -9,7 +9,7 @@ export default function ExperienceCard({
 }) {
   return (
     <div className="grid py-6 rounded-lg text-black gap-y-2 sm:text-center">
-      <div className="flex gap-x-2 items-center sm:justify-center">
+      <div className="flex flex-col sm:flex-row gap-x-2 sm:items-center sm:justify-center">
         <h1 className="font-bold text-xl text-black">{title}</h1>
         <h2 className="italic">{company}</h2>
         <h3 className="italic">{date}</h3>
