@@ -3,19 +3,13 @@ import { GithubProvider } from "./context/GithubProvider";
 import Projects from "./components/Projects";
 import Repositories from "./components/Repositories";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <GithubProvider>
       <div className="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
-        <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-6 shadow-md">
-          <div className="container mx-auto px-4 flex justify-between items-center">
-            <h1 className="text-3xl font-bold">Joseph Adames</h1>
-            <span className="bg-green-500 text-white text-sm px-3 py-1 rounded-full">
-              Available for Hire
-            </span>
-          </div>
-        </header>
+        <Header />
 
         <main className="container mx-auto px-4 py-10 flex-1">
           {/* About Section */}
