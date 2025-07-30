@@ -8,8 +8,8 @@ export default function ExperienceCard({
   link,
 }) {
   return (
-    <div className="grid p-6 rounded-lg text-black gap-y-2">
-      <div className="flex gap-x-2 items-center ">
+    <div className="grid py-6 rounded-lg text-black gap-y-2 sm:text-center">
+      <div className="flex gap-x-2 items-center sm:justify-center">
         <h1 className="font-bold text-xl text-black">{title}</h1>
         <h2 className="italic">{company}</h2>
         <h3 className="italic">{date}</h3>

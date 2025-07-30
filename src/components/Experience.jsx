@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 export default function Experience() {
   return (
     <section className="py-16">
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-2 sm:justify-center">
         <ExperienceCard
           company={"Storis, Inc."}
           title={"Senior Front End Developer"}
