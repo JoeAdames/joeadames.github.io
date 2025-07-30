@@ -2,8 +2,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <section className="mb-12">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
+    <section className="py-16">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {[
           "React.js",
