@@ -4,6 +4,9 @@ import Projects from "./components/Projects";
 import Repositories from "./components/Repositories";
 import "./App.css";
 import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -13,38 +16,11 @@ function App() {
 
         <main className="container mx-auto px-4 py-10 flex-1">
           {/* About Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">About Me</h2>
-            <p className="text-lg">
-              I’m a Senior Front-End Developer with 6+ years of experience
-              building responsive, modern web applications. I specialize in
-              React.js, TailwindCSS, and creating scalable UI systems.
-            </p>
-          </section>
-
+          <About />
+          {/* Experience Section */}
+          <Experience />
           {/* Skills Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Skills</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {[
-                "React.js",
-                "Next.js",
-                "TailwindCSS",
-                "TypeScript",
-                "JavaScript",
-                "Node.js",
-                "SQL",
-                "Python",
-              ].map((skill) => (
-                <span
-                  key={skill}
-                  className="bg-gray-200 px-3 py-1 rounded text-center"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </section>
+          <Skills />
           <Projects />
           <Repositories />
 

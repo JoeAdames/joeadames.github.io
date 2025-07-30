@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 export default function Experience() {
   return (
-    <section className="py-16 px-8 max-w-5xl mx-auto">
+    <section className="py-16">
       <div className="flex flex-col gap-y-2">
         <ExperienceCard
           company={"Storis, Inc."}
