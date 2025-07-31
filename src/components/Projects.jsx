@@ -10,12 +10,30 @@ export default function Projects() {
           name={"ruCompliant"}
           link={"https://rucompliant.vercel.app/"}
           description={"Security Audit"}
+          image={"./rucompliant.png"}
+          techList={[
+            "React.js",
+            "Controlled-Forms",
+            "TailwindCSS",
+            "Context API",
+            "LocalStorage",
+          ]}
         />
-        <ProjectCard name={""} link={""} description={""} />
-        <ProjectCard name={""} link={""} />
-        <ProjectCard name={""} link={""} />
+        <ProjectCard
+          name={"WTWGBLT"}
+          link={"https://joeadames.github.io/WTWGBLT/"}
+          description={"Whats the Weather Gonna Be like Today"}
+          image={"./WTWGBLT.png"}
+          techList={[
+            "React.js",
+            "TailwindCSS",
+            "Weather.gov API",
+            "ControlledForms",
+            "Context API",
+          ]}
+        />
       </div>
-      <div className="flex flex-col gap-y-8 text-right sm:text-left pt-8">
+      <div className="flex flex-col gap-y-8 text-right sm:text-left pt-16">
         {stories.map((story, i) => (
           <div key={i} className="flex flex-col gap-y-2">
             <h3 className="text-3xl font-semibold">{story.name}</h3>

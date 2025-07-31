@@ -39,9 +39,9 @@ export default function Skills() {
     <section className="py-8">
       <div className="overflow-hidden relative w-screen left-1/2 -translate-x-1/2">
         <ul className="flex gap-x-10 py-4 animate-infinite-scroll">
-          {[...skills, ...skills].map((skill) => (
+          {[...skills, ...skills].map((skill, i) => (
             <li
-              key={skill.name}
+              key={`skill-${i}`}
               className="p-4 text-center border-white shadow-md rounded-lg space-y-1"
             >
               <img src={skill.icon} alt="icon" className="w-25 h-25" />

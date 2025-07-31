@@ -19,8 +19,8 @@ function App() {
         <main className="container mx-auto px-4 py-10 flex-1">
           <Contact />
           <About />
-          <Experience />
           <Skills />
+          <Experience />
           <Projects />
           <Repositories />
         </main>
