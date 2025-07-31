@@ -37,7 +37,7 @@ export default function Skills() {
   ];
   return (
     <section className="py-16">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden relative w-screen left-1/2 -translate-x-1/2">
         <ul className="flex gap-x-10 py-4 animate-infinite-scroll">
           {[...skills, ...skills].map((skill) => (
             <li key={skill.name} className="px-3 py-1 text-center">
