@@ -15,6 +15,10 @@ export default function Skills() {
       icon: "https://cdn.simpleicons.org/javascript/F7DF1E",
     },
     {
+      name: "jQuery",
+      icon: "https://cdn.simpleicons.org/jQuery/0769ADE",
+    },
+    {
       name: "React.js",
       icon: "https://cdn.simpleicons.org/react/61DAFB",
     },
