@@ -17,9 +17,10 @@ function App() {
       <div className="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
         <Header />
         <main className="container mx-auto px-4 py-10 flex-1">
+          <Contact />
           <About />
-          <Skills />
           <Experience />
+          <Skills />
           <Projects />
           <Repositories />
         </main>
