@@ -36,11 +36,14 @@ export default function Skills() {
     },
   ];
   return (
-    <section className="py-16">
+    <section className="py-8">
       <div className="overflow-hidden relative w-screen left-1/2 -translate-x-1/2">
         <ul className="flex gap-x-10 py-4 animate-infinite-scroll">
           {[...skills, ...skills].map((skill) => (
-            <li key={skill.name} className="px-3 py-1 text-center">
+            <li
+              key={skill.name}
+              className="p-4 text-center border-white shadow-md rounded-lg space-y-1"
+            >
               <img src={skill.icon} alt="icon" className="w-25 h-25" />
               <p className="text-base font-light w-25">{skill.name}</p>
             </li>
