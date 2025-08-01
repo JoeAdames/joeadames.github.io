@@ -43,7 +43,7 @@ export default function Projects() {
             "React.js",
             "TailwindCSS",
             "Weather.gov API",
-            "ControlledForms",
+            "Controlled-Forms",
             "Context API",
           ]}
         />
