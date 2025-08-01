@@ -9,7 +9,7 @@ export default function Header() {
         </h1>
         <a
           className="hover:scale-105 transition-transform duration-300"
-          href="public\JDA_FED_JS.docx"
+          href="/JDA_FED_JS.docx"
           download
         >
           <span className="bg-white text-black text-sm px-6 py-2 rounded-full cursor-pointer font-bold ">
