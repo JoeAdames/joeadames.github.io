@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section className="py-16">
-      <div className="flex justify-evenly gap-x-2 py-8">
+      <div className="flex justify-evenly gap-x-4 py-8">
         <ProjectCard
           name={"ruCompliant"}
           link={"https://rucompliant.vercel.app/"}
@@ -20,8 +20,23 @@ export default function Projects() {
           ]}
         />
         <ProjectCard
+          name={"Adcock Furniture"}
+          link={"https://adcockfurniture.com/"}
+          description={"Completed project from Storis with Adcock furniture"}
+          image={"./adcock.png"}
+          techList={[
+            "NOPCommerce CMS",
+            "HTML",
+            "CSS",
+            "Grid",
+            "JavaScript",
+            "jQuery",
+            "Figma",
+          ]}
+        />
+        <ProjectCard
           name={"WTWGBLT"}
-          link={"https://joeadames.github.io/WTWGBLT/"}
+          link={"#"}
           description={"Whats the Weather Gonna Be like Today"}
           image={"./WTWGBLT.png"}
           techList={[
