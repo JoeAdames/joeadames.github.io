@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section className="py-16">
-      <div className="flex justify-evenly gap-x-4 py-8">
+      <div className="flex flex-col justify-evenly gap-x-4 py-8 sm:flex-row">
         <ProjectCard
           name={"ruCompliant"}
           link={"https://rucompliant.vercel.app/"}
