@@ -36,7 +36,7 @@ export default function Projects() {
         />
         <ProjectCard
           name={"WTWGBLT"}
-          link={"#"}
+          link={"https://joeadames.github.io/WTWGBLT/"}
           description={"Whats the Weather Gonna Be like Today"}
           image={"./WTWGBLT.png"}
           techList={[
