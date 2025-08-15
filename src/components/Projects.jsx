@@ -7,6 +7,13 @@ export default function Projects() {
     <section className="py-16">
       <div className="flex flex-col justify-evenly gap-x-4 py-8 sm:flex-row gap-y-4">
         <ProjectCard
+          name={"Restaurant Landing Page"}
+          link={"https://joeadames.github.io/PlayaTaqueria/"}
+          description={"Landing page for Local Restaurant"}
+          image={"./PlayaTaquira.png"}
+          techList={["React.js", "TailwindCSS"]}
+        />
+        <ProjectCard
           name={"ruCompliant"}
           link={"https://rucompliant.vercel.app/"}
           description={"Security Audit"}
