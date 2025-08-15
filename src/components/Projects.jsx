@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   return (
     <section className="py-16">
-      <div className="flex flex-col justify-evenly gap-x-4 py-8 sm:flex-row gap-y-4">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 place-items-center">
         <ProjectCard
           name={"Restaurant Landing Page"}
           link={"https://joeadames.github.io/PlayaTaqueria/"}
